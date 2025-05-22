@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Vida Animal</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background-color: #66bb6a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    img {
+      width: 200px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Veterinaria Vida Animal</h1>
+    <p>¡Cuidamos a tus mejores amigos!</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#equipo">Nuestro equipo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Consultas generales</li>
+        <li>Vacunación</li>
+        <li>Cirugías menores</li>
+        <li>Estética canina y felina</li>
+      </ul>
+    </section>
+
+    <section id="equipo">
+      <h2>Nuestro equipo</h2>
+      <article>
+        <h3>Dra. Laura Martínez</h3>
+        <p>Especialista en medicina silvestre con 10 años de experiencia.</p>
+        <img src="https://www.biografia.de/wp-content/uploads/Laura-Salazar.webp" alt="Dra. Laura">
+      </article>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Veterinaria Vida Animal. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
