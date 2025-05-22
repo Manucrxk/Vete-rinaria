@@ -10,8 +10,8 @@ Veterinaria Vida Animal es una página web sencilla diseñada para mostrar los s
 
 ## Tecnologías utilizadas
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ## Autor
 
