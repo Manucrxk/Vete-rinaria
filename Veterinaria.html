@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Vida Animal</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background-color: #66bb6a;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .producto {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+    }
+
+    .controls {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .controls button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+      <h1>Veterinaria Vida Animal</h1>
+    <a href="Contacto.html">
+  <button>Contáctanos</button>
+</a>
+    <p>¡Cuidamos a tus mejores amigos!</p>
+  </header>
+
+  <div class="controls">
+    <button id="btnMostrar" onclick="mostrarMenu()">Mostrar menú</button>
+    <button id="btnOcultar" onclick="ocultarMenu()" style="display: none;">Ocultar menú</button>
+    <br><br>
+    <button onclick="cambiarFuente()">Cambiar fuente</button>
+    <button onclick="cambiarFondo()">Cambiar fondo</button>
+  </div>
+
+  <nav id="menuNav">
+    <a href="#servicios">Servicios</a>
+    <a href="#equipo">Nuestro equipo</a>
+    <a href="#quienes-somos">¿Quiénes somos?</a>
+    <a href="#catalogo">Catálogo de productos</a>
+  </nav>
+
+  <main>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Consultas generales</li>
+        <li>Vacunación</li>
+        <li>Cirugías menores</li>
+        <li>Estética canina y felina</li>
+      </ul>
+    </section>
+<section id="equipo">
+      <h2>Nuestro equipo</h2>
+      <article>
+        <h3>Dra. Laura Martínez</h3>
+        <p>Especialista en medicina silvestre con 10 años de experiencia.</p>
+        <img src="https://www.biografia.de/wp-content/uploads/Laura-Salazar.webp" alt="Dra. Laura">
+      </article>
+    </section>
+
+    <section id="quienes-somos">
+      <h2>¿Quiénes somos?</h2>
+      <p>Somos una veterinaria dedicada al bienestar animal, con un equipo de profesionales comprometidos con la salud y felicidad de tus mascotas.</p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo de alimentos</h2>
+      <div class="producto">
+        <img src="https://www.costco.com.mx/medias/sys_master/products/hca/ha6/314644837957662.jpg" alt="Producto 1">
+        <h4>Alimento para perro adulto</h4>
+        <p>Nutrición completa y balanceada.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xkK6z3l9zWG-my9A_jsVIoxls_LhN0PgB5oqpxczjC2jGzG3q6TMmdUt&s=10" alt="Producto 2">
+        <h4>Alimento para gato esterilizado</h4>
+        <p>Control de peso y salud renal.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKm8tSuAMaaIoCG2SeNfSZse6pj28USAiGIbIhvO7CSl-2O1xh5O_gbwP8&s=10" alt="Producto 3">
+        <h4>Snack dental para perro</h4>
+        <p>Ayuda a mantener dientes limpios.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyL5-OyFz_VQuQwbMiRur7Jzw8GiM9cMt1COH5VFqv8hfVV2tb_IW1J1m2&s=10" alt="Producto 4">
+        <h4>Comida húmeda para gato</h4>
+        <p>Sabor salmón irresistible.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQE2Dj4oNvLKS3ehQeXC7RvluAa09qmYkr1t7UkYp5JZ3vI6eJLkM3pJfv&s=10" alt="Producto 5">
+        <h4>Alimento premium para cachorros</h4>
+        <p>Desarrollo saludable y energía.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxy0_DcHa6vA_fiRrk7BRbKjzQwliDbky0g&usqp=CAU" alt="Producto 6">
+        <h4>Snack para entrenamiento</h4>
+        <p>Recompensas saludables para perros.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoRTpWbKiKTO8VCeYiW5ux3S-GDNK8BpM0GAigD47IIlTgZC7pHXb2S9E&s=10" alt="Producto 7">
+        <h4>Alimento especial para razas pequeñas</h4>
+        <p>Con croquetas adaptadas al tamaño.</p>
+      </div>
+    </section>
+  </main>
+<footer>
+    <p>&copy; 2025 Veterinaria Vida Animal. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarMenu() {
+      document.getElementById("menuNav").style.display = "flex";
+      document.getElementById("btnMostrar").style.display = "none";
+      document.getElementById("btnOcultar").style.display = "inline-block";
+    }
+
+    function ocultarMenu() {
+      document.getElementById("menuNav").style.display = "none";
+      document.getElementById("btnMostrar").style.display = "inline-block";
+      document.getElementById("btnOcultar").style.display = "none";
+    }
+
+    function cambiarFuente() {
+      const fuentes = ["Arial", "Georgia", "Courier New", "Verdana", "Tahoma"];
+      const actual = document.body.style.fontFamily || "Arial";
+      const nueva = fuentes[(fuentes.indexOf(actual) + 1) % fuentes.length];
+      document.body.style.fontFamily = nueva;
+    }
+
+    function cambiarFondo() {
+      const colores = ["#f0f8ff", "#fffbe7", "#ffe4e1", "#e6ffe6", "#f5f5f5"];
+      const actual = document.body.style.backgroundColor || "#f0f8ff";
+      const nueva = colores[(colores.indexOf(actual) + 1) % colores.length];
+      document.body.style.backgroundColor = nueva;
+    }
+  </script>
+</body>
+</html>
